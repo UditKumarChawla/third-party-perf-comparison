@@ -4,25 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-	<script src="https://cdn.optimizely.com/js/20179563206.js"></script>
-<!--   <!-- Start VWO Async SmartCode -->
-<!-- <script type='text/javascript'>
-  window._vwo_code = window._vwo_code || (function(){
-  var account_id=525642,
-  settings_tolerance=2000,
-  library_tolerance=2500,
-  use_existing_jquery=false,
-  is_spa=1,
-  hide_element='body',
-  
-  /* DO NOT EDIT BELOW THIS LINE */
-  f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
-  window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
-  </script> -->
-  <!-- End VWO Async SmartCode -->
-	<!-- begin Convert Experiences code-->
-<!-- <script type="text/javascript" src="https cdn-3.convertexperiments.com/js/10034863-10032866.js"></script> -->
-<!-- end Convert Experiences code -->
+	
 </head>
 <body>
 <!-- 	<iframe src="https://uditkumarchawla.github.io/third-party-perf-comparison/"></iframe> -->
@@ -48,6 +30,40 @@
     <div>First</div>
     <div>Lorem Ipsum</div>
   </div>
+	
+    <a href="#">Non Page Unloading Link</a>
+    <button id="testing">Button has ID with .</button>
+    <a href="/">Page Unloading Link</a>
+    <a href="javascript:void(0)" onclick="history.pushState(null, 'test', 'spa/1.html')">History Push new URL</a>
+    <a href="javascript:void(0)" onclick="history.pushState(null, 'test', '/jslib/jslib-test-website/')">Change hash</a>
+    <a href="javascript:void(0)" onclick="location.reload()"> Reload Website</a>
+    <a href="javascript:void(0)" onclick="location.replace('iframe.html')">Replace URl </a>
+    <a onclick="vwo_$('#test-img').attr('src', 'hello.jpeg');">Load new hello world image</a>
+    <a onclick="event.target.style.color='red'">Click me to change color</a>
+    <div>Lorem Ipsum</div>
+    <div style="position: relative;left: 100px" id="base-test-container">
+        <h3>Base Href Test</h3>
+        <a href="javascript:void(0)" onclick="setBaseHref()">Set base href to https://static.wingify.com/</a>
+        <a href="javascript:void(0)" onclick="removeBaseHref()">Click to remove base href </a>
+        <a href="javascript:void(0)"
+            onclick="$('#base-href-test').attr('src', '/vwo/wp-content/themes/vwo/images/home/scale-performance.svg?id=' + Math.random())">Refresh
+            Base href test Image</a>
+        <img id='base-href-test' alt="test" src="/vwo/wp-content/themes/vwo/images/home/scale-performance.svg">
+    </div>
+
+    <!--<img alt= "test-img" id="test-img" src="hello-world.gif" />-->
+    <div id="show-on-session-time-trigger-only">Show on session time trigger only</div>
+    LoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+    <a onclick="vwo_$('html').prepend('<div id=\'beforeHead\'>I am before head</div>')">I will insert an element as
+        before sibling of head</a>
+    <a onclick="vwo_$('#beforeHead').remove()">I will remove the before sibling of head</a>
+    <div>Lorem Ipsum</div>
+    <a onclick="event.target.remove()">Click me to remove</a>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div style="width:200px">Lorem Ipsum</div>
+
+
 <div>Lorem Ipsum</div>
     <div>Lorem Ipsum</div>
     <div>Lorem Ipsum</div>
