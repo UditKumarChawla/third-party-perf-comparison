@@ -35,20 +35,14 @@
     <button id="testing">Button has ID with .</button>
     <a href="/">Page Unloading Link</a>
     <a href="javascript:void(0)" onclick="history.pushState(null, 'test', 'spa/1.html')">History Push new URL</a>
-    <a href="javascript:void(0)" onclick="history.pushState(null, 'test', '/jslib/jslib-test-website/')">Change hash</a>
+    <a href="javascript:void(0)" onclick="history.pushState(null, 'test', '/test/testing.html')">Change hash</a>
     <a href="javascript:void(0)" onclick="location.reload()"> Reload Website</a>
     <a href="javascript:void(0)" onclick="location.replace('iframe.html')">Replace URl </a>
     <a onclick="vwo_$('#test-img').attr('src', 'hello.jpeg');">Load new hello world image</a>
     <a onclick="event.target.style.color='red'">Click me to change color</a>
     <div>Lorem Ipsum</div>
     <div style="position: relative;left: 100px" id="base-test-container">
-        <h3>Base Href Test</h3>
-        <a href="javascript:void(0)" onclick="setBaseHref()">Set base href to https://static.wingify.com/</a>
-        <a href="javascript:void(0)" onclick="removeBaseHref()">Click to remove base href </a>
-        <a href="javascript:void(0)"
-            onclick="$('#base-href-test').attr('src', '/vwo/wp-content/themes/vwo/images/home/scale-performance.svg?id=' + Math.random())">Refresh
-            Base href test Image</a>
-        <img id='base-href-test' alt="test" src="/vwo/wp-content/themes/vwo/images/home/scale-performance.svg">
+        <h3>Base Href Test</h3>        
     </div>
 
     <!--<img alt= "test-img" id="test-img" src="hello-world.gif" />-->
